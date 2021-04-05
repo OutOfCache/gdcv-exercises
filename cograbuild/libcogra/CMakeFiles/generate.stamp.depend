@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageMessage.cmake
+C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/CMakeLists.txt
+C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/buildutils/DeploySourceCode.cmake
+C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/buildutils/ErrofIfBuildDirectoryIsSourceDirectory.cmake
+C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/buildutils/FindIPP.cmake
+C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/buildutils/FindMKL.cmake
+C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/buildutils/FindVTune.cmake

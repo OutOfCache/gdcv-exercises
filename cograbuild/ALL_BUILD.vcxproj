@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7687338F-1E8B-33C3-825B-0E159D45A5F7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lenovo\Downloads\gdcv\cogra\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lenovo/Downloads/gdcv/cogra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lenovo/Downloads/gdcv/cogra -BC:/Users/Lenovo/Downloads/gdcv/cograbuild --check-stamp-file C:/Users/Lenovo/Downloads/gdcv/cograbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeCCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lenovo/Downloads/gdcv/cogra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lenovo/Downloads/gdcv/cogra -BC:/Users/Lenovo/Downloads/gdcv/cograbuild --check-stamp-file C:/Users/Lenovo/Downloads/gdcv/cograbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeCCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lenovo/Downloads/gdcv/cogra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lenovo/Downloads/gdcv/cogra -BC:/Users/Lenovo/Downloads/gdcv/cograbuild --check-stamp-file C:/Users/Lenovo/Downloads/gdcv/cograbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeCCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lenovo/Downloads/gdcv/cogra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lenovo/Downloads/gdcv/cogra -BC:/Users/Lenovo/Downloads/gdcv/cograbuild --check-stamp-file C:/Users/Lenovo/Downloads/gdcv/cograbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeCCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\3.20.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\ZERO_CHECK.vcxproj">
+      <Project>{E50EAE39-D55D-3329-B63B-DDF693285576}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\exercises\BasicImageProcessing\BasicImageProcessing.vcxproj">
+      <Project>{739FA8F4-200F-31EF-979A-B5D45B9B43BA}</Project>
+      <Name>BasicImageProcessing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\tests\contrib\SmokeTests\ContribSmokeTests.vcxproj">
+      <Project>{FD437F5F-B730-365A-8620-E7A0FE3EEE8A}</Project>
+      <Name>ContribSmokeTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\EigenTest\EigenTest.vcxproj">
+      <Project>{37C69D7F-40B3-32BF-BDAF-FE0FCE05FD94}</Project>
+      <Name>EigenTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\Helloimgui\Helloimgui.vcxproj">
+      <Project>{8542F9FE-66D4-3050-AC4A-71CA4D475709}</Project>
+      <Name>Helloimgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\ProjectWithTests\ProjectWithTests.vcxproj">
+      <Project>{5296B2D0-2A6B-3786-A9C3-7AF5FF7B60B1}</Project>
+      <Name>ProjectWithTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\ProjectWithTests\ProjectWithTests_lib.vcxproj">
+      <Project>{7E9A82D1-3E42-33CB-A8E1-198AE0530C3A}</Project>
+      <Name>ProjectWithTests_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\ProjectWithTests\ProjectWithTests_test.vcxproj">
+      <Project>{C5FED644-87F2-36CF-947A-F60BC2536EEC}</Project>
+      <Name>ProjectWithTests_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\SimpleTriangleBinary\SimpleTriangleBinary.vcxproj">
+      <Project>{4A8619B1-589B-3901-87AC-5C6D236F5C57}</Project>
+      <Name>SimpleTriangleBinary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\SimpleTriangleBinary\SimpleTriangleBinary_CopyResources.vcxproj">
+      <Project>{01818489-D54E-3ADE-9A9F-545448662F9F}</Project>
+      <Name>SimpleTriangleBinary_CopyResources</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\assimp\code\assimp.vcxproj">
+      <Project>{4B008DA4-0E9C-3A23-92BD-F1B031830DD1}</Project>
+      <Name>assimp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\clip\clip\clip.vcxproj">
+      <Project>{1F9E3CCC-A6BE-31A4-B529-DE18F88D9565}</Project>
+      <Name>clip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\libcogra\cogra.vcxproj">
+      <Project>{A585880A-261B-3B00-8706-41C65158E357}</Project>
+      <Name>cogra</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\CMakeProjects\glad\glad.vcxproj">
+      <Project>{F9EDA495-5CAB-38B4-9DE9-95361707BF57}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\glfw\src\glfw.vcxproj">
+      <Project>{7C053E53-482E-3DCD-9D84-E00C4466FF83}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\glmTest.vcxproj">
+      <Project>{13C24DA1-AE32-3A69-93AA-790F6A241B96}</Project>
+      <Name>glmTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\googletest\googletest\gtest.vcxproj">
+      <Project>{FECA0AB8-7C3A-3B34-8544-69ADE5162486}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\googletest\googletest\gtest_main.vcxproj">
+      <Project>{6CC1EAB4-85F8-3647-834A-8D8127A60465}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\CMakeProjects\imgui\imgui.vcxproj">
+      <Project>{5D0E15AF-F13D-3049-A9D4-30F3CF5DB0F8}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\tests\libcogra\libcogra_tests.vcxproj">
+      <Project>{F1DFB713-6378-3DC1-B8F0-120ADE22E802}</Project>
+      <Name>libcogra_tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\tbb\tbb_static.vcxproj">
+      <Project>{5145AEB6-3968-3D85-99E5-49C90191379B}</Project>
+      <Name>tbb_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\tbb\tbbmalloc_proxy_static.vcxproj">
+      <Project>{61A5F173-7E2A-3049-A8E5-24C4BD78E7FA}</Project>
+      <Name>tbbmalloc_proxy_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\tbb\tbbmalloc_static.vcxproj">
+      <Project>{442B29DA-0691-3E37-98D8-34EFC5D71104}</Project>
+      <Name>tbbmalloc_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\CMakeProjects\tinyfd\tinyfd.vcxproj">
+      <Project>{41516759-A677-321A-83ED-422A85FE250D}</Project>
+      <Name>tinyfd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\assimp\contrib\zlib\zlibstatic.vcxproj">
+      <Project>{F90F9539-F8A1-3792-BECA-99E6E117C5AE}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

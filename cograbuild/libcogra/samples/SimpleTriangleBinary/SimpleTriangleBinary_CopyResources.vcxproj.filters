@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\913ccec451a89d51073ebed6eb130c46\triangle.frag.spv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\913ccec451a89d51073ebed6eb130c46\triangle.vert.spv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\CMakeFiles\d8fecbebaf20a0969ccc6f2aeb0c2094\SimpleTriangleBinary_CopyResources.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\samples\SimpleTriangleBinary\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\SimpleTriangleBinary\CMakeFiles\SimpleTriangleBinary_CopyResources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8B08BF52-309F-3582-B805-09120D3C200B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

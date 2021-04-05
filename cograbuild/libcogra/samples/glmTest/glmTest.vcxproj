@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13C24DA1-AE32-3A69-93AA-790F6A241B96}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>glmTest</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glmTest.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glmTest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glmTest.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glmTest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glmTest.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glmTest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glmTest.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glmTest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\contrib\submodules\glfw\src\Debug\glfw3d.lib;..\..\contrib\CMakeProjects\glad\Debug\gladd.lib;..\..\libcogra\Debug\cograd.lib;..\..\contrib\CMakeProjects\imgui\Debug\imguid.lib;..\..\contrib\CMakeProjects\tinyfd\Debug\tinyfdd.lib;..\..\contrib\submodules\clip\clip\Debug\clipd.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/Debug/glmTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/Debug/glmTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\contrib\submodules\glfw\src\Release\glfw3.lib;..\..\contrib\CMakeProjects\glad\Release\glad.lib;..\..\libcogra\Release\cogra.lib;..\..\contrib\CMakeProjects\imgui\Release\imgui.lib;..\..\contrib\CMakeProjects\tinyfd\Release\tinyfd.lib;..\..\contrib\submodules\clip\clip\Release\clip.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/Release/glmTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/Release/glmTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\contrib\submodules\glfw\src\MinSizeRel\glfw3.lib;..\..\contrib\CMakeProjects\glad\MinSizeRel\glad.lib;..\..\libcogra\MinSizeRel\cogra.lib;..\..\contrib\CMakeProjects\imgui\MinSizeRel\imgui.lib;..\..\contrib\CMakeProjects\tinyfd\MinSizeRel\tinyfd.lib;..\..\contrib\submodules\clip\clip\MinSizeRel\clip.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/MinSizeRel/glmTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/MinSizeRel/glmTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glfw\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\glad\include;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\glm;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\imgui;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\CMakeProjects\tinyfd;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\clip;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\eigen;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\contrib\submodules\glfw\src\RelWithDebInfo\glfw3.lib;..\..\contrib\CMakeProjects\glad\RelWithDebInfo\glad.lib;..\..\libcogra\RelWithDebInfo\cogra.lib;..\..\contrib\CMakeProjects\imgui\RelWithDebInfo\imgui.lib;..\..\contrib\CMakeProjects\tinyfd\RelWithDebInfo\tinyfd.lib;..\..\contrib\submodules\clip\clip\RelWithDebInfo\clip.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/RelWithDebInfo/glmTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/RelWithDebInfo/glmTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\samples\glmTest\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/samples/glmTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lenovo/Downloads/gdcv/cogra -BC:/Users/Lenovo/Downloads/gdcv/cograbuild --check-stamp-file C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\buildutils\CreateApp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/samples/glmTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lenovo/Downloads/gdcv/cogra -BC:/Users/Lenovo/Downloads/gdcv/cograbuild --check-stamp-file C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\buildutils\CreateApp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/samples/glmTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lenovo/Downloads/gdcv/cogra -BC:/Users/Lenovo/Downloads/gdcv/cograbuild --check-stamp-file C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\buildutils\CreateApp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lenovo/Downloads/gdcv/cogra/libcogra/samples/glmTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lenovo/Downloads/gdcv/cogra -BC:/Users/Lenovo/Downloads/gdcv/cograbuild --check-stamp-file C:/Users/Lenovo/Downloads/gdcv/cograbuild/libcogra/samples/glmTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\buildutils\CreateApp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\samples\glmTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\samples\glmTest\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\ZERO_CHECK.vcxproj">
+      <Project>{E50EAE39-D55D-3329-B63B-DDF693285576}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\clip\clip\clip.vcxproj">
+      <Project>{1F9E3CCC-A6BE-31A4-B529-DE18F88D9565}</Project>
+      <Name>clip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\libcogra\cogra.vcxproj">
+      <Project>{A585880A-261B-3B00-8706-41C65158E357}</Project>
+      <Name>cogra</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\CMakeProjects\glad\glad.vcxproj">
+      <Project>{F9EDA495-5CAB-38B4-9DE9-95361707BF57}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\submodules\glfw\src\glfw.vcxproj">
+      <Project>{7C053E53-482E-3DCD-9D84-E00C4466FF83}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\CMakeProjects\imgui\imgui.vcxproj">
+      <Project>{5D0E15AF-F13D-3049-A9D4-30F3CF5DB0F8}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lenovo\Downloads\gdcv\cograbuild\libcogra\contrib\CMakeProjects\tinyfd\tinyfd.vcxproj">
+      <Project>{41516759-A677-321A-83ED-422A85FE250D}</Project>
+      <Name>tinyfd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\exceptions\RuntimeError.cpp">
+      <Filter>impl\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\FrameTime.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\GLDebug.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\GLSLProgram.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\GLSLRuntimeError.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\GLSLShader.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\MeshShaderConstants.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\OpenGLRuntimeError.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\OpenGLStatic.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\PerformanceQueries.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\Sampler.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\Screenshot.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\TaskShaderConstants.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\Texture.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\Texture1D.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\Texture2D.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\TextureBuffer.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\gl\UniformBuffer.cpp">
+      <Filter>impl\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\drawable\AABB3Drawable.cpp">
+      <Filter>impl\graphics\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\drawable\Drawable.cpp">
+      <Filter>impl\graphics\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\drawable\FrustumDrawable.cpp">
+      <Filter>impl\graphics\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\drawable\MeshDrawable.cpp">
+      <Filter>impl\graphics\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\drawable\MeshDrawableFactory.cpp">
+      <Filter>impl\graphics\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\drawable\PolyLineDrawable.cpp">
+      <Filter>impl\graphics\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\drawable\ScreenFillingPrimitive.cpp">
+      <Filter>impl\graphics\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\drawable\VertexAttributeTypeInfo.cpp">
+      <Filter>impl\graphics\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\geometry\IndexGrid.cpp">
+      <Filter>impl\graphics\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\geometry\SphereGeometry.cpp">
+      <Filter>impl\graphics\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\geometry\TriangleTools.cpp">
+      <Filter>impl\graphics\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\graphics\geometry\TriangleTopology.cpp">
+      <Filter>impl\graphics\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\imageprocessing\Image.cpp">
+      <Filter>impl\imageprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\io\CograBinaryMeshFile.cpp">
+      <Filter>impl\io</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\io\CubicBezierPatchLoader.cpp">
+      <Filter>impl\io</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\io\Log.cpp">
+      <Filter>impl\io</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\io\stb_image_impl.cpp">
+      <Filter>impl\io</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\tools\NormalizeFilename.cpp">
+      <Filter>impl\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\tools\Timer.cpp">
+      <Filter>impl\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\BlinnPhongWidget.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\ExaminerController.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\ExaminerControllerApp.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\FileDialog.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\FirstPersonCamera.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\GLFWApp.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\GLInformationWidget.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\ImGUIGL.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\ImGUIGLFW.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\ImGUIGLFW3Renderer.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\PitchShiftControl.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\PointDragger.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\TimeControl.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\TimeControlUI.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\TrackballControl.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\WireFrameWidget.cpp">
+      <Filter>impl\ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\cograconfig.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\impl\ui\noc\noc_file_dialog.h">
+      <Filter>impl\ui\noc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\constants.h">
+      <Filter>interface\cogra</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\eigen.h">
+      <Filter>interface\cogra</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\exceptions\RuntimeError.h">
+      <Filter>interface\cogra\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\BufferEnums.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\FrameTime.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\GLDebug.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\GLSLProgram.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\GLSLRuntimeError.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\GLSLShader.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\MeshShaderConstants.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\OpenGLRuntimeError.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\OpenGLStatic.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\PerformanceQueries.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\Sampler.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\Screenshot.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\TaskShaderConstants.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\Texture.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\Texture1D.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\Texture2D.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\TextureBuffer.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\TextureEnums.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\gl\UniformBuffer.h">
+      <Filter>interface\cogra\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\AABB3Drawable.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\Drawable.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\FrustumDrawable.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\MeshDrawable.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\MeshDrawableFactory.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\PolyLineDrawable.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\ScreenFillingPrimitive.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\SkyBox.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\drawable\VertexAttributeTypeInfo.h">
+      <Filter>interface\cogra\graphics\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\AxisAlignedBoundingBox.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\CorrespondingTypes.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\Distance.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\IndexGrid.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\InsideOutsideTests.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\IntrinsicCamera.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\MathTools.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\Plane.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\SphereGeometry.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\TriangleTools.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\graphics\geometry\TriangleTopology.h">
+      <Filter>interface\cogra\graphics\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\imageprocessing\Image.h">
+      <Filter>interface\cogra\imageprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\imageprocessing\ImageCompressionMetrics.h">
+      <Filter>interface\cogra\imageprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\imageprocessing\ImageQualityMetrics.h">
+      <Filter>interface\cogra\imageprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\io\CograBinaryMeshFile.h">
+      <Filter>interface\cogra\io</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\io\CubicBezierPatchLoader.h">
+      <Filter>interface\cogra\io</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\io\Log.h">
+      <Filter>interface\cogra\io</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\system.h">
+      <Filter>interface\cogra</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\tools\NormalizeFilename.h">
+      <Filter>interface\cogra\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\tools\Timer.h">
+      <Filter>interface\cogra\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\types.h">
+      <Filter>interface\cogra</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\BlinnPhongWidget.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\ExaminerController.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\ExaminerControllerApp.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\FileDialog.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\FirstPersonCamera.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\GLFWApp.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\GLFWWindow.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\GLFWWindowConfig.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\GLInformationWidget.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\ImGUIGL.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\ImGUIGLFW.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\ImGUIGLFW3Renderer.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\PitchShiftControl.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\PointDragger.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\TimeControl.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\TimeControlUI.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\TrackballControl.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\interface\cogra\ui\WireFrameWidget.h">
+      <Filter>interface\cogra\ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\libcogra\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="impl">
+      <UniqueIdentifier>{381887EE-6A9A-3CCA-ADCF-91D1354242D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\exceptions">
+      <UniqueIdentifier>{5746C554-5E69-39AC-BAA4-94540D4F0691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\gl">
+      <UniqueIdentifier>{0991FF76-78B7-395C-8826-DBD014FA3EF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\graphics">
+      <UniqueIdentifier>{38F98F22-ADFB-3090-B14E-2B2CEE49E2EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\graphics\drawable">
+      <UniqueIdentifier>{A24A33E6-1246-300B-80AB-BDDC3F934392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\graphics\geometry">
+      <UniqueIdentifier>{5C54B9FC-2413-3479-90D1-38785CE0C554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\imageprocessing">
+      <UniqueIdentifier>{CE1A0B5B-175B-3B51-827B-00A0887584A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\io">
+      <UniqueIdentifier>{9834FBE1-EED6-3B30-9029-42EF72990862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\tools">
+      <UniqueIdentifier>{F684E5A6-5DCC-35B8-96F2-FD52E5E750E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\ui">
+      <UniqueIdentifier>{77DA22FC-3F98-30AB-8215-2FBF5EB59BCB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\ui\noc">
+      <UniqueIdentifier>{C3DF91A7-86B8-3EE8-BF3E-3638DC189DF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{940AE384-1E9C-3F48-A7C8-60DF1488755E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra">
+      <UniqueIdentifier>{2689B263-84AD-3021-B0F7-8CCEB5E39724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\exceptions">
+      <UniqueIdentifier>{1A511A8D-F8A3-3BBB-A421-2E65FCB54D22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\gl">
+      <UniqueIdentifier>{AA9836C2-C252-3CD1-B2CB-92D71F90E4F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\graphics">
+      <UniqueIdentifier>{E896BFCF-4E7F-3DD5-9E6A-62C85F84CDF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\graphics\drawable">
+      <UniqueIdentifier>{3E7794FE-E62E-339B-B9BF-9CD819F65351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\graphics\geometry">
+      <UniqueIdentifier>{BBD1CB35-4B40-304E-90DD-4639A341F07B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\imageprocessing">
+      <UniqueIdentifier>{C6DA9155-9B51-3A97-A2BE-882BC5FED221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\io">
+      <UniqueIdentifier>{B4C3AC48-B95C-390C-AF85-CA0147F7FC74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\tools">
+      <UniqueIdentifier>{240D9BE4-5106-3A78-A0C1-DC34371B501D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\cogra\ui">
+      <UniqueIdentifier>{7C54B5D1-DC2A-3B25-8150-07A1C9762D91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

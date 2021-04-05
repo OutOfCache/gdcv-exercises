@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\tbb\src\tbbmalloc\proxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\tbb\src\tbbmalloc\tbb_function_replacement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lenovo\Downloads\gdcv\cogra\libcogra\contrib\submodules\tbb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C8F7214B-B9C5-345F-AAD0-4086F8981128}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
