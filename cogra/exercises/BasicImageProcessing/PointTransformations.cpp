@@ -9,7 +9,12 @@ namespace
 ui8vec3 sat(const i32vec3& input)
 {
   // Assignment 3
-  return input;
+	ui8vec3 output;
+	output.x = std::max(std::min(input.x, 255), 0);
+	output.y = std::max(std::min(input.y, 255), 0);
+	output.z = std::max(std::min(input.z, 255), 0);
+
+  return output;
 }
 
 /// <summary>
@@ -18,7 +23,12 @@ ui8vec3 sat(const i32vec3& input)
 ui8vec3 sat(const f32vec3& input)
 {
   // Assignment 3
-  return input;
+	ui8vec3 output;
+	output.x = std::max(std::min((int)(input.x + 0.5), 255), 0);
+	output.y = std::max(std::min((int)(input.y + 0.5), 255), 0);
+	output.z = std::max(std::min((int)(input.z + 0.5), 255), 0);
+
+	return output;
 }
 }
 
