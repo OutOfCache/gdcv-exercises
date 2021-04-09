@@ -9,15 +9,11 @@ ImageRGB8 SimpleGeometricTransforms::flip(const ImageRGB8 & input)
   // ImageRGB8 result(1, 1);
     ImageRGB8 result(input);
     
-    for (int y = 0; y < result.height() / 2; y++)
+    for (int y = 0; y < result.height(); y++)
     {
         for (int x = 0; x < result.width(); x++)
         {
-            ui8vec3 tmp = result(x, y);                         // color of upper pixel
-            int upper = result.offset(x, y);                    // address of pixel in upper half
-            int lower = result.offset(x, result.height() - y - 1);  // address of pixel in lower half
-            result.data()[upper] = result(lower);
-            result.data()[lower] = tmp;
+            result(x, y) = input(x, input.height() - y - 1);
         }
     }
   return result;
