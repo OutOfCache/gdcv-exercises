@@ -109,10 +109,10 @@ void testFilter()
 
 int main()
 {
-  testSimpleGeometricTransformations();
+  // testSimpleGeometricTransformations();
 
   // Uncomment the following lines as you proceed with the Lab.
-  // testPointTransformations();
+  testPointTransformations();
   // testGeometricTransformations();
   // testFilter();
   return 0;
