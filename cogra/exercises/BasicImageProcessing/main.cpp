@@ -112,8 +112,8 @@ int main()
   // testSimpleGeometricTransformations();
 
   // Uncomment the following lines as you proceed with the Lab.
-  testPointTransformations();
-  // testGeometricTransformations();
+  // testPointTransformations();
+  testGeometricTransformations();
   // testFilter();
   return 0;
 }
