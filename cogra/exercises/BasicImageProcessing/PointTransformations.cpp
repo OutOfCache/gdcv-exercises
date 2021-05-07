@@ -73,7 +73,9 @@ namespace GdCV
 			// Assignment 4
 			for (int i = 0; i < input.nPixels(); i++)
 			{
-				f32mat3 test(1.0 / 3, 1.0 / 3, 1.0 / 3, 1.0 / 3, 1.0 / 3, 1.0 / 3, 1.0 / 3, 1.0 / 3, 1.0 / 3);
+				f32mat3 test(0.25f, 0.5f, 0.25f,
+							 0.25f, 0.5f, 0.25f,
+							 0.25f, 0.5f, 0.25f);
 				result(i) = (test * input(i));
 			}
 			return result;
@@ -87,11 +89,8 @@ namespace GdCV
 			ImageRGB8 result(minWidth, minHeight);
 			// Assignment 4
 
-			//for (int i = 0; i < result.nPixels(); i++) {
-			for (int y = 0; y < result.height(); y++) {
-				for (int x = 0; x < result.width(); x++) {
-					result(x, y) = f32mat3(1.0 - alpha) * a(x, y) + f32mat3(alpha) * b(x, y);
-				}
+			for (int i = 0; i < result.nPixels(); i++) {
+				result(i) = sat((1.0f - alpha) * (f32vec3)a(i) + (alpha) * (f32vec3)b(i));
 			}
 
 		return result;
