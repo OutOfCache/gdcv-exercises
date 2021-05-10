@@ -113,7 +113,7 @@ int main()
 
   // Uncomment the following lines as you proceed with the Lab.
   // testPointTransformations();
-  testGeometricTransformations();
-  // testFilter();
+  // testGeometricTransformations();
+  testFilter();
   return 0;
 }
