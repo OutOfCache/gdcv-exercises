@@ -41,7 +41,12 @@ std::unique_ptr<PolynomialCurveSegment> MonomialCurveSegment::toMonomialCurveSeg
 std::unique_ptr<PolynomialCurveSegment> MonomialCurveSegment::toLagrangeCurveSegment() const
 {
     // Assignment 1d
-    return std::make_unique<LagrangeCurveSegment>(getCoefficients());
+    std::vector<f32vec2> coefficients;
+    float n = getDegree();
+    for (int i = 0; i <= n; i++) {
+        coefficients.push_back(evaluate(i / n));
+    }
+    return std::make_unique<LagrangeCurveSegment>(coefficients);
 }
 
 std::unique_ptr<PolynomialCurveSegment> MonomialCurveSegment::toBezierCurveSegment() const
