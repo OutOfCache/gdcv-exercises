@@ -42,6 +42,8 @@ void LagrangeCurveSegment::elevateDegree()
         throw cogra::exceptions::RuntimeError("Degree is higher than allowed");
     }
     // Assignment 1f
+
+    getCoefficients() = sample(getDegree() + 1);
 }
 
 void LagrangeCurveSegment::reduceDegree()
@@ -52,7 +54,30 @@ void LagrangeCurveSegment::reduceDegree()
 std::unique_ptr<PolynomialCurveSegment> LagrangeCurveSegment::toMonomialCurveSegment() const
 {    
     // Assignemt 1e
-    return std::make_unique<MonomialCurveSegment>(getCoefficients());
+
+
+    Eigen::VectorXf x(getDegree() + 1);
+    Eigen::VectorXf y(getDegree() + 1);
+
+    for (int i = 0; i < getDegree() + 1; i++) {
+        x(i) = getCoefficient(i).x;
+        y(i) = getCoefficient(i).y;
+    }
+
+    Eigen::MatrixXf v = lagrangeBasisFunctionsToMonomialBasisfunctions(getDegree()).inverse();
+
+    x = v * x;
+    y = v * y;
+
+
+    auto result = std::make_unique<MonomialCurveSegment>(getDegree());
+
+
+    for (int i = 0; i < getDegree() + 1; i++) {
+        result->getCoefficient(i) = f32vec2(x[i], y[i]);
+    }
+
+    return result;
 }
 
 std::unique_ptr<PolynomialCurveSegment> LagrangeCurveSegment::toLagrangeCurveSegment() const
@@ -70,6 +95,13 @@ Eigen::MatrixXf LagrangeCurveSegment::lagrangeBasisFunctionsToMonomialBasisfunct
 {
     Eigen::MatrixXf v(degree + 1, degree + 1);
     // Assignment 1e
+
+    for (int i = 0; i < v.rows(); i++) {
+        for (int j = 0; j < v.cols(); j++) {
+            v(i, j) = pow((double)i / degree, j);
+        }
+    }
+
     return v;
 }
 }

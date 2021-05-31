@@ -26,6 +26,9 @@ f32vec2 MonomialCurveSegment::evaluate(const float t) const
 void MonomialCurveSegment::elevateDegree()
 {    
     // Assignment 1f
+    f32vec2 new_coeff(0, 0);
+
+    getCoefficients().push_back(new_coeff);
 }
 
 void MonomialCurveSegment::reduceDegree()
@@ -42,8 +45,8 @@ std::unique_ptr<PolynomialCurveSegment> MonomialCurveSegment::toLagrangeCurveSeg
 {
     // Assignment 1d
     std::vector<f32vec2> coefficients;
-    float n = getDegree();
-    for (int i = 0; i <= n; i++) {
+    const float n = getDegree();
+    for (int i = 0; i <= getDegree(); i++) {
         coefficients.push_back(evaluate(i / n));
     }
     return std::make_unique<LagrangeCurveSegment>(coefficients);
