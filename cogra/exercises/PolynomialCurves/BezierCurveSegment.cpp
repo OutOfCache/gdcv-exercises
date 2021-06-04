@@ -31,7 +31,17 @@ BezierCurveSegment::BezierCurveSegment(uint32 degree)
 f32vec2 BezierCurveSegment::evaluate(const float t) const
 {    
     // Assignment 2a
-    return f32vec2(0, 0);
+    
+    const float v = 1 - t;
+
+    int degree = getDegree();
+    f32vec2 result = getCoefficient(degree); // binomial(degree, 0) nicht notwendig
+    float up = t;
+    for (int i = degree - 1; i >= 0; i--, up *= t) {
+        result = result * v + binomial(degree, i) * up * getCoefficient(i);
+    }
+
+    return result;
 }
 
 void BezierCurveSegment::elevateDegree()
