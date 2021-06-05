@@ -73,7 +73,7 @@ Eigen::MatrixXf BezierCurveSegment::degreeElevationMatrix(uint32 sourceDegree)
 std::unique_ptr<PolynomialCurveSegment> BezierCurveSegment::toMonomialCurveSegment() const
 {    
     // Assignment 2b
-    auto coeff = std::make_unique<MonomialCurveSegment>(getDegree());
+    auto result = std::make_unique<MonomialCurveSegment>(getDegree());
 
     Eigen::MatrixXf m = MonomialCurveSegment::monomialBasisFunctionsToBezierBasisFunctions(getDegree()).transpose();
 
@@ -89,17 +89,38 @@ std::unique_ptr<PolynomialCurveSegment> BezierCurveSegment::toMonomialCurveSegme
     y = m * y;
 
     for (int i = 0; i < getDegree() + 1; i++) {
-        coeff->getCoefficient(i) = f32vec2(x(i), y(i));
+        result->getCoefficient(i) = f32vec2(x(i), y(i));
     }
 
-    return coeff;
+    return result;
     
 }
 
 std::unique_ptr<PolynomialCurveSegment> BezierCurveSegment::toLagrangeCurveSegment() const
 {    
     // Assignment 2c
-    return std::make_unique<LagrangeCurveSegment>(getCoefficients());
+    // return std::make_unique<LagrangeCurveSegment>(getCoefficients());
+    auto result = std::make_unique<LagrangeCurveSegment>(getCoefficients());
+    
+    Eigen::MatrixXf m = MonomialCurveSegment::monomialBasisFunctionsToBezierBasisFunctions(getDegree()).transpose();
+    Eigen::MatrixXf v = LagrangeCurveSegment::lagrangeBasisFunctionsToMonomialBasisfunctions(getDegree());
+
+    Eigen::VectorXf x(getDegree() + 1);
+    Eigen::VectorXf y(getDegree() + 1);
+
+    for (int i = 0; i < getDegree() + 1; i++) {
+        x(i) = getCoefficient(i).x;
+        y(i) = getCoefficient(i).y;
+    }
+    
+    x = v * m * x;
+    y = v * m * y;
+
+    for (int i = 0; i < getDegree() + 1; i++) {
+        result->getCoefficient(i) = f32vec2(x(i), y(i));
+    }
+
+    return result;
 }
 
 std::unique_ptr<PolynomialCurveSegment> BezierCurveSegment::toBezierCurveSegment() const
