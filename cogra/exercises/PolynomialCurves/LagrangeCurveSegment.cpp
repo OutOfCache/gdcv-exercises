@@ -90,7 +90,7 @@ std::unique_ptr<PolynomialCurveSegment> LagrangeCurveSegment::toBezierCurveSegme
     // Assignment 2c
     auto result = std::make_unique<BezierCurveSegment>(getDegree());
 
-    Eigen::MatrixXf m = MonomialCurveSegment::monomialBasisFunctionsToBezierBasisFunctions(getDegree()).inverse().transpose();
+    Eigen::MatrixXf m = MonomialCurveSegment::monomialBasisFunctionsToBezierBasisFunctions(getDegree()).transpose().inverse();
     Eigen::MatrixXf v = LagrangeCurveSegment::lagrangeBasisFunctionsToMonomialBasisfunctions(getDegree()).inverse();
 
     Eigen::VectorXf x(getDegree() + 1);
