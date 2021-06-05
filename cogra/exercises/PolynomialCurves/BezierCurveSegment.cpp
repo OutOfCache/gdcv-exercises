@@ -73,7 +73,27 @@ Eigen::MatrixXf BezierCurveSegment::degreeElevationMatrix(uint32 sourceDegree)
 std::unique_ptr<PolynomialCurveSegment> BezierCurveSegment::toMonomialCurveSegment() const
 {    
     // Assignment 2b
-    return std::make_unique<MonomialCurveSegment>(getCoefficients());
+    auto coeff = std::make_unique<MonomialCurveSegment>(getDegree());
+
+    Eigen::MatrixXf m = MonomialCurveSegment::monomialBasisFunctionsToBezierBasisFunctions(getDegree()).transpose();
+
+    Eigen::VectorXf x(getDegree() + 1);
+    Eigen::VectorXf y(getDegree() + 1);
+
+    for (int i = 0; i < getDegree() + 1; i++) {
+        x(i) = getCoefficient(i).x;
+        y(i) = getCoefficient(i).y;
+    }
+
+    x = m * x;
+    y = m * y;
+
+    for (int i = 0; i < getDegree() + 1; i++) {
+        coeff->getCoefficient(i) = f32vec2(x(i), y(i));
+    }
+
+    return coeff;
+    
 }
 
 std::unique_ptr<PolynomialCurveSegment> BezierCurveSegment::toLagrangeCurveSegment() const
