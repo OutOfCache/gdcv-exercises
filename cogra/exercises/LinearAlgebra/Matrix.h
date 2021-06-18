@@ -193,11 +193,30 @@ public:
   void setZero()
   {
       // Assignment 1
+      uint32 n = nElements();
+      for (int i = 0; i < n; i++)
+      {
+          m_data[i] = 0.0f; 
+      }
   }
 
   void setIdentity()
   {
       // Assignment 1
+      for (int i = 0; i < nRows(); i++)
+      {
+          for (int j = 0; j < nCols(); j++)
+          {
+              if (i == j)
+              {
+                  m_data[i] = 1.0f;
+              }
+              else
+              {
+                  m_data[i] = 0.0f;
+              }
+          }
+      }
   }
 
   friend std::ostream& operator<<(std::ostream& os, const Matrix& m)
