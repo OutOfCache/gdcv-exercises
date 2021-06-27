@@ -354,11 +354,11 @@ int main(int argc, char** argv)
 {
   //testIdentity();
   //testZero();
-  //testTranspose();
+  testTranspose();
   //testScale();
   //testAdd();
   //testMinus();
-  testMultiplication();
+  //testMultiplication();
   //testLUDecomposition();
   return 1;
 }

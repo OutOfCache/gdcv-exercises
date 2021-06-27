@@ -248,7 +248,16 @@ public:
   Matrix transpose() const
   {
       // Assignment 1
-    Matrix result(1, 1);
+    Matrix result(nCols(), nRows());
+
+    for (uint32 i = 0; i < result.nRows(); i++)
+    {
+        for (uint32 j = 0; j < result.nCols(); j++)
+        {
+            result(i, j) = operator()(j, i);
+        }
+    }
+
     return result;
   }
 
