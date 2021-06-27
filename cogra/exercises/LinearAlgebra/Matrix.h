@@ -190,28 +190,18 @@ public:
   Matrix operator*=(const T s)
   {
       // Assignment 1
-      /* for (int i = 0; i < nRows(); i++)
+      for (int i = 0; i < nElements(); i++)
       {
-          for (int j = 0; j < nCols(); j++)
-          {
-              this(i, j) *= s;
-          }
+          m_data[i] *= s;
       }
-      */
-      *this = *this * s;
+      
     return *this;
   }
 
   friend Matrix operator*(Matrix lhs, const T s)
   {
       // Assignment 1
-      for (uint32 i = 0; i < lhs.nRows(); i++)
-      {
-          for (uint32 j = 0; j < lhs.nCols(); j++)
-          {
-              lhs(i, j) *= s;
-          }
-      }
+      lhs *= s;
 
       return lhs;
   }
@@ -219,13 +209,7 @@ public:
   friend Matrix operator*(const T s, Matrix rhs)
   {
       // Assignment 1
-      for (uint32 i = 0; i < rhs.nRows(); i++)
-      {
-          for (uint32 j = 0; j < rhs.nCols(); j++)
-          {
-              rhs(i, j) *= s;
-          }
-      }
+      rhs *= s;
     return rhs;
   }
 
