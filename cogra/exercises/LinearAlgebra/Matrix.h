@@ -33,12 +33,14 @@ public:
       // Assignment 1
     : m_nRows(other.m_nRows)
     , m_nCols(other.m_nCols)
-    , m_data(new T[nRows * nCols])
+    , m_data(new T[m_nRows * m_nCols])
   {
 
     // Assignment 1
-      std::copy(std::begin(other.m_data), std::end(other.m_data), std::begin(m_data));
+      //std::copy((other.m_data, other.m_data + m_nCols * m_nRows, m_data);
+      std::memcpy(m_data, other.m_data, m_nCols * m_nRows * sizeof(T));
   }
+
 
   Matrix(Matrix<T>&& other) noexcept
       : m_nRows(std::exchange(other.m_nRows, 0))
@@ -62,11 +64,21 @@ public:
   Matrix& operator=(Matrix<T>&& other) noexcept
   {
       // Assignment 1
-      std::swap(m_n_Rows, other.m_nRows);
-      std::swap(m_n_Cols, other.m_nCols);
-      std::swap(m_data, other.m_data);
+      T* tmp = m_data;
 
-    return *this;
+      m_data = other.m_data;
+      m_nCols = other.m_nCols;
+      m_nRows = other.m_nRows;
+
+      other.m_data = nullptr;
+      other.m_nCols = 0;
+      other.m_nRows = 0;
+
+      if (tmp)
+      {
+          delete[] tmp;
+      }
+       return *this;
   }
 
   ~Matrix()
@@ -104,16 +116,16 @@ public:
     return m_data;
   }
 
-  const T operator()(uint32 x, uint32 y) const
+  const T operator()(uint32 row, uint32 col) const
   {
       // Assignment 1
-    return m_data[0];
+    return m_data[col * nRows() + row];
   }
 
-  T& operator()(uint32 x, uint32 y)
+  T& operator()(uint32 row, uint32 col)
   {
       // Assignment 1
-    return m_data[0];
+    return m_data[col * nRows() + row];
   }
 
   const T operator[](uint32 ofs) const
@@ -131,49 +143,110 @@ public:
   Matrix operator+=(const Matrix& rhs)
   {
       // Assignment 1
+      // Zeilen und Spalten prüfen?
+      for (uint32 i = 0; i < nElements(); i++)
+      {
+          
+          m_data[i] += rhs[i];
+      }
+
     return *this;
   }
 
   friend Matrix operator+(Matrix lhs, Matrix& rhs) 
   {
       // Assignment 1
+      for (uint32 i = 0; i < lhs.nRows(); i++)
+      {
+          for (uint32 j = 0; j < lhs.nCols(); j++)
+          {
+              lhs(i, j) += rhs(i, j);
+          }
+      }
+
     return lhs;
   }
 
   Matrix operator-=(const Matrix& rhs)
   {
       // Assignment 1
+      for (uint32 i = 0; i < nElements(); i++)
+      {
+          
+          m_data[i] -= rhs[i];
+      }
     return *this;
   }
 
   friend Matrix operator-(Matrix lhs, Matrix& rhs)
   {
       // Assignment 1
+      for (uint32 i = 0; i < lhs.nRows(); i++)
+      {
+          for (uint32 j = 0; j < lhs.nCols(); j++)
+          {
+              lhs(i, j) -= rhs(i, j);
+          }
+      }
     return lhs;
   }
 
   Matrix operator*=(const T s)
   {
       // Assignment 1
+      /* for (int i = 0; i < nRows(); i++)
+      {
+          for (int j = 0; j < nCols(); j++)
+          {
+              this(i, j) *= s;
+          }
+      }
+      */
+      *this = *this * s;
     return *this;
   }
 
   friend Matrix operator*(Matrix lhs, const T s)
   {
       // Assignment 1
-    return lhs;
+      for (uint32 i = 0; i < lhs.nRows(); i++)
+      {
+          for (uint32 j = 0; j < lhs.nCols(); j++)
+          {
+              lhs(i, j) *= s;
+          }
+      }
+
+      return lhs;
   }
 
   friend Matrix operator*(const T s, Matrix rhs)
   {
       // Assignment 1
+      for (uint32 i = 0; i < rhs.nRows(); i++)
+      {
+          for (uint32 j = 0; j < rhs.nCols(); j++)
+          {
+              rhs(i, j) *= s;
+          }
+      }
     return rhs;
   }
 
   friend Matrix operator*(const Matrix& lhs, const Matrix& rhs)
   {
       // Assignment 1
-    Matrix result(1, 1);
+      
+    Matrix result(lhs.nRows(), rhs.nCols());
+    
+    for (int i = 0; i < lhs.nRows(); i++)
+    {
+        for (int j = 0; j < rhs.nCols(); j++)
+        {
+            // float element_ij = 
+        }
+    }
+    
     return result;
   }
 
@@ -194,31 +267,26 @@ public:
   {
       // Assignment 1
       uint32 n = nElements();
-      for (int i = 0; i < n; i++)
+      for (uint32 i = 0; i < n; i++)
       {
-          m_data[i] = 0.0f; 
+          m_data[i] = T(0); 
       }
   }
 
   void setIdentity()
   {
       // Assignment 1
-      for (int i = 0; i < nRows(); i++)
+      //setZero();
+      for (uint32 i = 0; i < nRows(); i++)
       {
-          for (int j = 0; j < nCols(); j++)
+          for (uint32 j = 0; j < nCols(); j++)
           {
-              if (i == j)
-              {
-                  m_data[i] = 1.0f;
-              }
-              else
-              {
-                  m_data[i] = 0.0f;
-              }
+
+              operator()(i, j) = j == i ? T(1): T(0);
           }
       }
   }
-
+  
   friend std::ostream& operator<<(std::ostream& os, const Matrix& m)
   {
     os << "[\n";
