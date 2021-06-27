@@ -355,10 +355,10 @@ int main(int argc, char** argv)
   //testIdentity();
   //testZero();
   //testTranspose();
-  testScale();
+  //testScale();
   //testAdd();
   //testMinus();
-  //testMultiplication();
+  testMultiplication();
   //testLUDecomposition();
   return 1;
 }

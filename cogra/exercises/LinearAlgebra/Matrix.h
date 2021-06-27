@@ -190,7 +190,7 @@ public:
   Matrix operator*=(const T s)
   {
       // Assignment 1
-      for (int i = 0; i < nElements(); i++)
+      for (uint32 i = 0; i < nElements(); i++)
       {
           m_data[i] *= s;
       }
@@ -218,12 +218,19 @@ public:
       // Assignment 1
       
     Matrix result(lhs.nRows(), rhs.nCols());
+    result.setZero();
     
-    for (int i = 0; i < lhs.nRows(); i++)
-    {
-        for (int j = 0; j < rhs.nCols(); j++)
+    if (lhs.nCols() == rhs.nRows()) {
+
+        for (uint32 i = 0; i < lhs.nRows(); i++)
         {
-            // float element_ij = 
+            for (uint32 j = 0; j < rhs.nCols(); j++)
+            {
+                for (uint32 k = 0; k < lhs.nCols(); k++)
+                {
+                    result(i, j) += lhs(i, k) * rhs(k, j);
+                }
+            }
         }
     }
     
@@ -233,6 +240,8 @@ public:
   Matrix operator *=(const Matrix& rhs)
   {
       // Assignment 1
+
+      *this = *this * rhs;
     return *this;
   }
 
