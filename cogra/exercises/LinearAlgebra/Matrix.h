@@ -33,7 +33,7 @@ public:
       // Assignment 1
     : m_nRows(other.m_nRows)
     , m_nCols(other.m_nCols)
-    , m_data(new T[m_nRows * m_nCols])
+    , m_data(new T[other.m_nRows * other.m_nCols])
   {
 
     // Assignment 1
@@ -144,25 +144,23 @@ public:
   {
       // Assignment 1
       // Zeilen und Spalten prüfen?
-      for (uint32 i = 0; i < nElements(); i++)
+      if (m_nCols == rhs.m_nCols && m_nRows == rhs.m_nRows)
       {
-          
-          m_data[i] += rhs[i];
-      }
+          for (uint32 i = 0; i < nElements(); i++)
+          {
 
+              m_data[i] += rhs[i];
+          }
+
+      }
+      
     return *this;
   }
 
   friend Matrix operator+(Matrix lhs, Matrix& rhs) 
   {
       // Assignment 1
-      for (uint32 i = 0; i < lhs.nRows(); i++)
-      {
-          for (uint32 j = 0; j < lhs.nCols(); j++)
-          {
-              lhs(i, j) += rhs(i, j);
-          }
-      }
+      lhs += rhs;
 
     return lhs;
   }
@@ -170,10 +168,14 @@ public:
   Matrix operator-=(const Matrix& rhs)
   {
       // Assignment 1
-      for (uint32 i = 0; i < nElements(); i++)
+      if (m_nCols == rhs.m_nCols && m_nRows == rhs.m_nRows)
       {
-          
-          m_data[i] -= rhs[i];
+          for (uint32 i = 0; i < nElements(); i++)
+          {
+
+              m_data[i] -= rhs[i];
+          }
+
       }
     return *this;
   }
@@ -181,13 +183,7 @@ public:
   friend Matrix operator-(Matrix lhs, Matrix& rhs)
   {
       // Assignment 1
-      for (uint32 i = 0; i < lhs.nRows(); i++)
-      {
-          for (uint32 j = 0; j < lhs.nCols(); j++)
-          {
-              lhs(i, j) -= rhs(i, j);
-          }
-      }
+      lhs -= rhs;
     return lhs;
   }
 
