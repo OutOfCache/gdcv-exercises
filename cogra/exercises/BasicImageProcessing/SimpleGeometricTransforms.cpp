@@ -90,9 +90,9 @@ ImageRGB8 SimpleGeometricTransforms::crop(const ImageRGB8 & input,
   ImageRGB8 result(cropWidth, cropHeight);
   
 
-  for (int y = upperLeft.y; y < lowerRight.y; y++) {
-      for (int x = upperLeft.x; x < lowerRight.x; x++) {
-          result(x - upperLeft.x, y - upperLeft.y) = input(x, y);
+  for (int y = 0; y < cropHeight; y++) {
+      for (int x = 0; x < cropWidth; x++) {
+          result(x, y) = input(x + upperLeft.x, y + upperLeft.y);
       }
   }
   return result;
